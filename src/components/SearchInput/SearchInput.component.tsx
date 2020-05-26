@@ -6,7 +6,7 @@ interface Props {
   onSubmit: (input: string ) => void
 }
 const SearchInput: React.FC<Props> = ({ onSubmit }) => {
-  const [input, setInput] = React.useState('bangkok')
+  const [input, setInput] = React.useState('')
   const classes = useStyles()
 
   const search = async () => {
